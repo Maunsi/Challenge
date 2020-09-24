@@ -1,5 +1,6 @@
 .PHONY: venv test
 
+#TODO: make target for running
 
 venv: requirements.txt
 	test -d venv || virtualenv venv
