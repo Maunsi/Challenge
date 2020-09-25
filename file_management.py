@@ -3,12 +3,13 @@ import pandas as pd
 
 def download_file(url, destination):
     customer_file = requests.get(url)
-    open(destination, 'wb').write(customer_file.content)
+    with open(destination, 'wb') as file:
+       file.write(customer_file.content)
 
-def read_file(file):
+def read_file_as_dataframe(file):
     # TODO: do something to avoid reading entire file to memory
-    customer_file = open(file, 'r')
-    customers = pd.read_json(customer_file, lines=True)
+    with open(file, 'r') as customer_file:
+        customers = pd.read_json(customer_file, lines=True)
     return customers
 
 def write_output(customers, destination):
