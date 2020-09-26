@@ -5,12 +5,12 @@ from select_customers import select_customers
 
 def parse_arguments(arguments):
     parser = argparse.ArgumentParser(description='Invite customers within a certain distance into the office')
-    parser.add_argument(dest='location_file', metavar='location_file', help='Json file path')
+    parser.add_argument(dest='location_file', metavar='location_file', help='Json file path', required=True)
     parser.add_argument(dest='distance_in_km', metavar='distance_in_km', type=int,
-                        help='Distance in km')
+                        help='Distance in km', required=True)
     parser.add_argument(dest='office', metavar='office',
-                        help='Office location consists of two float values, latitude and longitude', nargs=2)
-    parser.add_argument(dest='output_file', metavar='output_file', help='Destination of output file')
+                        help='Office location consists of two float values, latitude and longitude', nargs=2, required=True)
+    parser.add_argument(dest='output_file', metavar='output_file', help='Destination of output file', required=True)
     args = parser.parse_args(arguments)
     return args
 

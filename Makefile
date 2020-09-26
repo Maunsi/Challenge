@@ -1,7 +1,5 @@
 .PHONY: venv test
 
-#TODO: make target for running
-
 venv: requirements.txt
 	test -d venv || virtualenv venv
 	venv/bin/pip install -qUr requirements.txt
