@@ -37,3 +37,18 @@ class TestCustomers(unittest.TestCase):
         invite_customers([input_file, distance, office_lat, office_long, output_file])
         self.assertTrue(filecmp.cmp(output_file, expected_output_file, shallow=False))
 
+    def test_eligible(self):
+        """
+        Test output is correct when there are eligible customers
+        """
+        input_file = 'https://raw.githubusercontent.com/Maunsi/Intercom/master/tests/resources/eligible_file.txt'
+        output_file = './output_files/eligible_file_output.csv'
+        expected_output_file = './tests/resources/expected_eligible_file.csv'
+        distance = '100'
+        office_lat = '53.339428'
+        office_long = '-6.257664'
+        if os.path.exists(output_file):
+            os.remove(output_file)
+        invite_customers([input_file, distance, office_lat, office_long, output_file])
+        self.assertTrue(filecmp.cmp(output_file, expected_output_file, shallow=False))
+

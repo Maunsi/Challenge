@@ -1,3 +1,4 @@
 {"latitude": "-27.471226", "user_id": 12, "name": "Christina McArdle", "longitude": "-58.839584"}
 {"latitude": "-33.000603", "user_id": 1, "name": "Alice Cahill", "longitude": "-58.519363"}
 {"latitude": "-34.603722", "user_id": 2, "name": "Ian McArdle", "longitude": "-58.381592"}
+{"latitude": "53.350140", "user_id": 2, "name": "Someone Close", "longitude": "-6.266155"}
