@@ -1,4 +1,4 @@
-# Maureen's Intercom submission!
+# Maureen's challenge submission!
 
 ## To run invitations:
 Open a new terminal window and run:  
