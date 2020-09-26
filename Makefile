@@ -8,3 +8,6 @@ venv: requirements.txt
 
 test: venv
 	$(BIN)python3 -m unittest discover -s tests -v
+
+run: venv
+	$(BIN)python3 main.py
