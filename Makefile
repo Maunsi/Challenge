@@ -1,4 +1,5 @@
 .PHONY: venv test
+BIN=venv/bin/
 
 venv: requirements.txt
 	test -d venv || virtualenv venv
