@@ -1,13 +1,19 @@
 # Maureen's challenge submission!
 
+## Requirements:
+To be able to run, ```python3```, ```pip3``` and ``make`` should be installed.
+
 ## To run invitations:
 Open a new terminal window and run:  
 
-```python3 invite_customers.py https://s3.amazonaws.com/intercom-take-home-test/customers.txt 100 53.339428 -6.257664 ./output_files/output.csv```
+```python3 main.py ```
 
 Parameters can be tweaked if needed:
 
-```python3 invite_customers.py <location_file>  <distance_in_km> <office latitude> <office longitude> <output_file>```
+```python3 main.py -l <location_file>  -d <distance_in_km> -office <office latitude> <office longitude> -o <output_file>```
+
+To get help:
+```python3 main.py -h```
 
 ## To run tests:
 Open a new terminal window and run:  
