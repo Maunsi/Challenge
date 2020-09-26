@@ -1,10 +1,7 @@
 import unittest
-import pandas as pd
-import select_customers as sc
 from main import invite_customers
 import filecmp
 import os
-
 
 class TestCustomers(unittest.TestCase):
     def test_empty_file(self):
